@@ -4,12 +4,18 @@ import java.time.LocalDateTime;
 
 import javax.persistence.*;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @Entity
 @Getter @Setter
 @Table(name = "product")
+@NoArgsConstructor //파라미터가 없는 생성자
+@AllArgsConstructor //전체 필드 파라미터가 있는 생성자
+@ToString
 public class Product {
 
 	@Id
