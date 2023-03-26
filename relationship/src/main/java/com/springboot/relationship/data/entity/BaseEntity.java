@@ -23,8 +23,8 @@ public class BaseEntity {
 
 	@CreatedDate
 	@Column(updatable = false)
-	private LocalDateTime createdAt;
+	private LocalDateTime createdAt; //작성 날짜
 	
 	@LastModifiedDate
-	private LocalDateTime updatedAt;
+	private LocalDateTime updatedAt; //수정 날짜
 }
